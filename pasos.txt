@@ -1,6 +1,6 @@
 Ejecuta "composer install" para descargar la carpeta vendor y las dependencias de Laravel.
 
-Copia el archivo .env.example y renombralo a .env. Despues abrelo y pon los datos de tu base de datos local.
+Copia el archivo cp .env.example y renombralo a .env. Despues abrelo y pon los datos de tu base de datos local.
 
 Ejecuta "php artisan key:generate" para crear la clave de seguridad de la aplicacion.
 
