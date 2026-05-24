@@ -1,0 +1,30 @@
+Ejecuta "composer install" para descargar la carpeta vendor y las dependencias de Laravel.
+
+Copia el archivo .env.example y renombralo a .env. Despues abrelo y pon los datos de tu base de datos local.
+
+Ejecuta "php artisan key:generate" para crear la clave de seguridad de la aplicacion.
+
+Ejecuta "php artisan migrate:fresh --seed" para que se creen todas las tablas con sus relaciones y se inserten los usuarios y datos de prueba.
+
+Ejecuta "php artisan serve" para levantar el servidor.
+
+Los usuarios de prueba que he creado con el seeder para que puedas acceder son:
+Usuario administrador: admin_biblio (clave: admin123)
+Usuario bibliotecario: biblio1 (clave: biblio123)
+Usuario estudiante: alu1 (clave: alu123)
+
+Resumen de comandos utilizados
+
+Estos son los comandos principales que he ido utilizando para construir la aplicacion paso a paso:
+
+Para iniciar el proyecto: composer create-project laravel/laravel:^10 NombreProyecto
+
+Para las tablas y estructura: php artisan make:model NombreModelo -m
+
+Para los datos de prueba: php artisan make:factory NombreFactory
+
+Para gestionar las sesiones: php artisan make:controller LoginController
+
+Para la proteccion de rutas: php artisan make:middleware RoleMiddleware (registrado despues en el Kernel)
+
+Para la logica de vistas y base de datos: php artisan make:controller NombreController -r
